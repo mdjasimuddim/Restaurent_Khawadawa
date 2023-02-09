@@ -1,0 +1,60 @@
+.header-area{
+    padding: 20px 0;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    @include min-xs{
+        position: inherit;
+        padding: 0;
+    }
+    @include min-sm{
+        text-align: center;
+    }
+   .logo{
+        @include min-xs{
+            position:absolute;
+            left: 10px;
+            top: 10px;
+        }
+   } 
+    .menu{
+        @include min-xs{
+            display: none;
+        }
+        ul{
+            @include min-sm{
+                text-align: center;
+                margin-top: 20px;
+            }
+            li{
+                a{
+                    display: block;
+                    text-transform: capitalize;
+                    margin-left: 20px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $white;
+                    @include min-sm{
+                        font-size: 15px;
+                        margin-left: 15px;
+                    }
+                    @include min-md{
+                        font-size: 15px;
+                        margin-left: 15px;
+                    }
+                    &:hover{
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+}
+.slicknav_menu{
+    display: none;
+    @include min-xs{
+        display: block;
+    }
+}

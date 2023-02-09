@@ -1,0 +1,116 @@
+.about-area{
+    @include min-xs{
+        padding: 30px 0;
+        // margin: 0;
+    }
+    @include min-sm{
+        margin-bottom: 70px;
+    }
+    @include min-md{
+        margin-bottom: 70px;
+    }
+    .about-content{
+        p{
+            margin-bottom: 30px;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: justify;
+        }
+    }
+    .about-gallery{
+        position: relative;
+        @include min-xs{
+            margin-top: 30px;
+            margin-bottom: 130px;
+        }
+        @include min-sm{
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+        @include min-md{
+            margin-top: 60px;
+            margin-bottom: 120px;
+        }
+        @include min-lg{
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+        img{
+            border: 1px solid $gray;
+            &:nth-child(1){
+                max-width: 450px;
+                @include min-xs{
+                    margin-right: 15px;
+                    max-width: 100%;
+                }
+                @include min-sm{
+                    // bottom: -50px;
+                    max-width: 100%;
+                    // margin-right: 0;
+                    // margin-bottom: 100px;
+                }
+                @include min-md{
+                    // bottom: -50px;
+                    max-width: 100%;
+                    // margin-right: 0;
+                    // margin-bottom: 100px;
+                }
+                @include min-lg{
+                    margin-right: 15px;
+                    max-width: 100%;
+                }
+            }
+            &:nth-child(2){
+              position: absolute;
+              max-width: 370px;
+              right: 0px;
+              bottom: -80px; 
+              @include min-xs{
+                max-width: 100%;
+                top: 130px;
+                left: 0;
+            }
+              @include min-sm{
+                bottom: -130px;
+                max-width: 100%;
+                margin-right: 0;
+            }
+            @include min-md{
+                bottom: -150px;
+                max-width: 100%;
+                margin-right: 0;
+                // margin-bottom: 100px;
+            }
+              @include min-lg{
+                bottom: -100px;
+                max-width: 100%;
+                margin-right: 0;
+                // margin-bottom: 100px;
+            }
+              @include min-xl{
+                    right: 0;
+                } 
+            }
+        }
+    }
+    .about-page-img{
+        img{
+            width: 100%;
+            vertical-align: middle;
+            border: 1px solid $gray;
+            padding: 3px;
+            // margin-bottom: 60px;
+            @include min-md{
+                margin-bottom: 10px;
+            }
+            @include min-lg{
+                margin-top: 80px;
+            }
+        }
+    }
+    .about-page-content{
+        p{
+            margin-bottom:20px;
+        }
+    }
+}

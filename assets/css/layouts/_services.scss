@@ -1,0 +1,42 @@
+.services-area{
+    .single-service{
+        text-align: center;
+        border: 1px solid $gray;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        position: relative;
+        transition: 0.3s;
+        &:hover{
+            &:before,&:after{
+                width: 100%;
+            }
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width:0;
+            height: 3px;
+            background-color: $primary_color;
+            transition: 0.3s;
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 3px;
+            background-color: $primary_color;
+            transition: 0.3s;
+        }
+        img{
+            width: 50px;
+        }
+        h4{
+            margin: 15px 0;
+        }
+    }
+
+}

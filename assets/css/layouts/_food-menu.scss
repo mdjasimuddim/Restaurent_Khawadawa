@@ -1,0 +1,51 @@
+.menu-area{
+    background-color: #f2f2f2;
+    border-bottom: 1px solid $gray;
+    border-top: 1px solid $gray;
+    .single-menu{
+        padding: 20px;
+        background-color: $white;
+        border: 1px solid $gray;
+        margin-bottom: 30px;
+        display:flex;
+        @include min-xs{
+            display: inherit;
+            text-align: center;
+        }
+        @include min-lg{
+            display: inherit;
+            text-align: center;
+        }
+        &:hover{
+            img{
+                border-radius: 50%;
+            }
+        }
+        img{
+            max-width: 110px;
+            margin-right: 20px;
+            transition: 0.3s;
+        }
+        h4{
+            font-size: 22px;
+            border-bottom: 1px dashed $gray;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            @include min-xs{
+                margin-top: 5px;
+            }
+            @include min-lg{
+                margin-top: 10px;
+            }
+            span{
+                float: right;
+                color: $primary_color;
+                font-style: italic;
+                @include min-lg{
+                    float: none;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
